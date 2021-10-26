@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gasto Calórico</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <h1 class="titulo">Seu gasto Calórico</h1>
+    </div>
+    <div class="caixaprincipal">
+        <div class="caixaprincipalsecundaria">
+            <div class="listadeh1">
+                <select id="valor">
+                    <option>Homem</option>
+                    <option>Mulher</option>
+                </select>
+
+            </div>
+
+            <label>
+                sua idade : <br>
+                <input type="number" placeholder="Em anos">
+            </label>
+
+            <label>
+                seu peso : <br>
+                <input type="number" placeholder="Em kg">
+            </label>
+
+            <label>
+                sua altura : <br>
+                <input type="number" placeholder="Em centímetros">
+            </label>
+
+
+
+        </div>
+
+    </div>
+    <div class="containerfinal">
+        <div class="caixafinal">
+            <button onclick="caucular()">Caucular</button>
+
+            <textarea readonly></textarea>
+        </div>
+
+    </div>
+
+
+
+
+
+
+    <script src="javascript.js"></script>
+</body>
+
+</html>
