@@ -51,6 +51,19 @@ body{
     width:80%;
     height: 90%;
 }
+.selecoes{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+}
+img{
+    background-color:blue;
+    border-radius: 100%;
+    width:17%;
+    height:90%;
+    margin:5px;
+}
 label{
     display:flex;
     flex-direction: column;
