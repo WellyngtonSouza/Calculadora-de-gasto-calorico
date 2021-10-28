@@ -46,6 +46,7 @@ function caucular() {
     }
     textarea.innerHTML = "voce consumiu " + valortotal.toFixed(0) + " calorias"
 }
+
 function mudar(){
     let selected = document.getElementById("valor").value
     let imagem1 = document.getElementsByTagName("img")[0]
@@ -61,5 +62,27 @@ function mudar(){
         imagem1.style.backgroundColor = "white"
     }
      
+}
+
+function mudar(){
+    let selected = document.getElementById("valor").value
+    let imagem1 = document.getElementsByTagName("img")[0]
+    let imagem2 = document.getElementsByTagName("img")[1]
+
+    if(selected === "Homem"){
+        imagem1.style.backgroundColor = "blue"
+        imagem2.style.backgroundColor = "white"
+    }
+   
+    if(selected === "Mulher"){
+        imagem2.style.backgroundColor = "blue"
+        imagem1.style.backgroundColor = "white"
+    }
+}
+
+    function iniciar(){
+    let imagem1 = document.getElementsByTagName("img")[0]
+    imagem1.style.backgroundColor = "blue"
+
 }
 
