@@ -5,51 +5,61 @@
     outline: none;
     font-family: Arial, Helvetica, sans-serif;
 }
-body{
-    
-    
+.selecoes{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+}
+img{
+    background-color:white;
+    border-radius: 100%;
+    width:17%;
+    height:90%;
+    margin:5px;
+}
+body{ 
     background-color: black;
-
+}
+.resumo{
+    text-align: center;
+    color:white;
+    margin-top:10px;
+    border:3px solid white;
+    margin-left: 4px;
+    margin-right: 4px;
 }
 .header{
-    border-bottom:solid 2px black;
-    margin-top:50px;
-    width:30%;
-    background-color: #ffd700;
     display: flex;
     justify-content: center;
-    border-radius:20px 20px 0px 0px;
+    margin-top:50px;
     margin-left:auto;
     margin-right: auto;
+    width:30%;
+    background-color: #ffd700;
+    border-bottom:solid 2px black;
+    border-radius:20px 20px 0px 0px;
     font-size:90%; 
 }
+
 .titulo{
- padding:20px 0px 20px 0px ;
+    text-align: center;
+    padding:20px 0px 20px 0px ;
 }
-.listadeh1 h1{
-    display:inline-block;
-    margin-right: 10px;
-    justify-content: center;
-    padding:4px;  
-}
-.listadeh1 h1:hover{
-    color:white;
-    background-color: black;
- padding:4px;
-}
+
 .caixaprincipal{
+    display: flex;
+    justify-content: center;
     margin-left:auto;
     margin-right: auto;
     width: 30%;
-    height:500px;
+    height:80%;
     background-color: #ffd700;
     border-bottom:solid 2px black;
-    display: flex;
-    justify-content: center;
-    height:80%;
     align-items: center;
 }
-.caixaprincipalsecundaria{
+
+.caixa-dos-dados{
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -65,8 +75,8 @@ label{
     font-weight: bold;
     height:75px;
     width:80%;
-    box-sizing: border-box;
 }
+
 input{
     margin-left: auto;
     margin-right: auto;
@@ -80,6 +90,7 @@ input{
     border:3px solid black;
     padding:5px;
 }
+
 button{
     height:40px;
     width:78%;
@@ -93,54 +104,54 @@ button{
     border:none;
     cursor:pointer;
 }
-textarea{
-    width:100%;
-    margin-bottom:20px;
-    height:90px;
-    font-size:40px;
-    resize: none;
-    border-radius: 30px;
-    cursor:auto;
-    text-align: center;
-    font-weight:bold;  
-}
+
 .containerfinal{
     display: flex;
     justify-content: center;
-    background-color: #ffd700;
-    border-radius:0px 0px 20px 20px;
     margin-left:auto;
     margin-right: auto;
     width: 30%;
+    background-color: #ffd700;
+    border-radius:0px 0px 20px 20px;
     margin-bottom:40px;
 }
+
 .caixafinal{
     display:flex;
     flex-direction: column;
     justify-content: center;
 }
+
 textarea{
+    width:100%;
+    margin-bottom:20px;
+    height:90px;
+    resize: none;
+    border-radius: 30px;
+    cursor:auto;
+    font-weight:bold;  
     margin-left: auto;
     margin-right: auto;
     text-align: center;
     font-size: 15px;
     padding-top: 20px;
+    border:3px solid black;
 }
+
 select{
     text-align: center;
     width:200px;
+    margin-bottom:10px;
+    margin-top:10px;
+    padding:10px;
     font-size:20px;
     font-weight: bold;
     border-radius: 20px;
     background-color: black;
     color:white;
-    margin-bottom:10px;
-    margin-top:10px;
-    padding:10px;
+   
 }
-.valor option{
-    height:40px;    
-}
+
 @media (max-width:1200px) {
     
     .header{
@@ -152,7 +163,7 @@ select{
     }
     .containerfinal{
         width:50%;
-        margin-bottom:40px;
+        margin-bottom:100px;
     }
 }
 
@@ -168,10 +179,7 @@ select{
         width:70%;
         height:300px;
     }
-    .containerfinal{
-        width:70%;
-        margin-bottom:40px;
-    }
+    
     label{
         font-size: 20px;
         height:50px;
@@ -183,6 +191,10 @@ select{
     }
     select{
         margin-bottom: 20px;
+    }
+    .containerfinal{
+        width:70%;
+        margin-bottom:100px;
     }
 }
  
@@ -201,7 +213,7 @@ select{
         height:170px;
         margin-bottom:40px;
     }
-    .caixaprincipalsecundaria{
+    .caixa-dos-dados{
         margin-top:0;
     }
     select{

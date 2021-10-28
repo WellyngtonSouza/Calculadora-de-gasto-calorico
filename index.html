@@ -9,37 +9,38 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 
-<body>
+<body onload="iniciar()">
 
-    <div class="header">
-        <h1 class="titulo">Seu gasto Calórico</h1>
-    </div>
+    <h3 class="resumo">O gasto calórico basal é a quantidade de energia que o organismo gasta mesmo estando descansando
+        ou dormindo. Aqui você fica sabendo a quantidade de calorias que deve ingerir por dia para satisfazer as
+        necessidades do corpo.</h3>
+    <header class="header">
+        <h1 class="titulo">Calculadora do gasto calórico</h1>
+    </header>
     <div class="caixaprincipal">
-        <div class="caixaprincipalsecundaria">
-            <div class="listadeh1">
-                <select id="valor">
+        <div class="caixa-dos-dados">
+            <div class="selecoes">
+                <img src="images/man_icon-icons.com_50102.ico">
+                <select id="valor"  onclick="mudar()">
                     <option>Homem</option>
                     <option>Mulher</option>
                 </select>
-
+                <img src="./images/woman_icon-icons.com_49954.png">
             </div>
-
             <label>
                 sua idade : <br>
-                <input type="number" placeholder="Em anos">
+                <input type="number" placeholder="Ex : 19">
             </label>
 
             <label>
                 seu peso : <br>
-                <input type="number" placeholder="Em kg">
+                <input type="number" placeholder="Ex : 92">
             </label>
 
             <label>
                 sua altura : <br>
-                <input type="number" placeholder="Em centímetros">
+                <input type="number" placeholder="Ex : 186">
             </label>
-
-
 
         </div>
 
@@ -49,6 +50,7 @@
             <button onclick="caucular()">Caucular</button>
 
             <textarea readonly></textarea>
+
         </div>
 
     </div>
