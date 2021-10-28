@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 
-<body>
+<body onload="iniciar">
     <h3 class="resumo">O gasto calórico basal é a quantidade de energia que o organismo gasta mesmo estando descansando ou dormindo. Aqui você fica sabendo a quantidade de calorias que deve ingerir por dia para satisfazer as necessidades do corpo.</h3>
     <header class="header">
         <h1 class="titulo">Calculadora do gasto calórico</h1>
@@ -18,7 +18,7 @@
         <div class="caixa-dos-dados">
               <div class="selecoes">
                   <img src="images/man_icon-icons.com_50102.ico">
-                <select id="valor" onchange="mudar()">
+                <select id="valor" onclick="mudar()">
                     <option>Homem</option>
                     <option>Mulher</option>
                 </select>
