@@ -48,7 +48,7 @@ function mudar(){
         imagem2.style.backgroundColor = "blue"
         imagem1.style.backgroundColor = "white"
     }
-    
+    caucular()
     
 }
 function iniciar(){
