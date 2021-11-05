@@ -3,10 +3,11 @@ let inputidade = document.getElementsByTagName("input")[0]
 let inputpeso = document.getElementsByTagName("input")[1]
 let inputaltura = document.getElementsByTagName("input")[2]
 
+function iniciar(){
+    let imagem1 = document.getElementsByTagName("img")[0]
+    imagem1.style.backgroundColor = "blue"
 
-
-
-
+}
 
 function caucular() {
 
@@ -48,12 +49,8 @@ function mudar(){
         imagem2.style.backgroundColor = "#ff6781"
         imagem1.style.backgroundColor = "white"
     }
-    caucular()
+
     
 }
-function iniciar(){
-    let imagem1 = document.getElementsByTagName("img")[0]
-    imagem1.style.backgroundColor = "blue"
 
-}
 
