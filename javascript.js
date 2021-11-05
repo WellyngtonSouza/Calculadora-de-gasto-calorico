@@ -45,7 +45,7 @@ function mudar(){
     }
    
     if(selected === "Mulher"){
-        imagem2.style.backgroundColor = "pink"
+        imagem2.style.backgroundColor = "#ff6781"
         imagem1.style.backgroundColor = "white"
     }
     caucular()
