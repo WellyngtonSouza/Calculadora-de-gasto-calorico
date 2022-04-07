@@ -1,4 +1,4 @@
-
+// eae meus nobres 
 let inputidade = document.getElementsByTagName("input")[0]
 let inputpeso = document.getElementsByTagName("input")[1]
 let inputaltura = document.getElementsByTagName("input")[2]
