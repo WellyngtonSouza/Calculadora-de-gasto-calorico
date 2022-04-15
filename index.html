@@ -1,70 +1,54 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gasto Calórico</title>
+    <title>calculadora de gasto calórico</title>
     <link rel="stylesheet" href="./style.css">
+
 </head>
+<body>
+    <div class="caixa-principal">
+        <div class="header">
+            <h2> Calculadora de gasto calórico</h3>
+        </div>
+        <div class="body">
 
-<body onload="iniciar()">
-
-    <h3 class="resumo">O gasto calórico basal é a quantidade de energia que o organismo gasta mesmo estando descansando
-        ou dormindo. Aqui você fica sabendo a quantidade de calorias que deve ingerir por dia para satisfazer as
-        necessidades do corpo.</h3>
-    
-    <header class="header">
-        <h1 class="titulo">Calculadora do gasto calórico</h1>
-    </header>
-    <div class="caixaprincipal">
-        <div class="caixa-dos-dados">
-
-
-            <div class="selecoes">
-                <img src="images/man_icon-icons.com_50102.ico">
-                <select id="valor" onchange="mudar()">
-                    <option>Homem</option>
-                    <option>Mulher</option>
-                </select>
-                <img src="./images/woman_icon-icons.com_49954.png">
+            <div class="father">
+                <div class="son-1">
+                    <input id="button-h" type="button" value="HOMEM">
+                    <input id="button-m" type="button" value="MULHER">
+                </div>
+            </div>
+            <div class="mother">
+                <div class="son-2">
+                    <input  id ="input-idade" type="text" placeholder="Idade">
+                    <input id ="input-peso" type="text" placeholder="Peso">
+                    <input id ="input-altura" type="text" placeholder="Altura">
+                </div>
             </div>
 
-            <label>
-                sua idade : <br>
-                <input type="number" placeholder="Ex : 19">
-            </label>
-
-            <label>
-                seu peso : <br>
-                <input type="number" placeholder="Ex : 92">
-            </label>
-
-            <label>
-                sua altura : <br>
-                <input type="number" placeholder="Ex : 186">
-            </label>
+            
+            
 
         </div>
 
-    </div>
-    <div class="containerfinal">
-        <div class="caixafinal">
-            <button onclick="caucular()">Caucular</button>
-
-            <textarea readonly></textarea>
-
+        <div class="footer">
+            <div class="father-1">
+                <div class="son-1-1">
+                    <input  id="calcular" type="button" value="calcular">
+                </div>
+            </div>
+            <div class="mother-1">
+                <div class="son-2-2">
+                    
+                </div>
+            </div>
         </div>
 
     </div>
 
-
-
-
-
-
-    <script src="javascript.js"></script>
+    <script src="./javascript.js"></script>
 </body>
-
 </html>

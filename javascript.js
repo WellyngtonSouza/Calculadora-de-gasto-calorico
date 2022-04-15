@@ -1,66 +1,72 @@
+let botaoH = document.querySelector("#button-h");
+let botaoM = document.querySelector("#button-m");
+let calcular = document.querySelector("#calcular");
+let inputI = document.querySelector("#input-idade");
+let inputP = document.querySelector("#input-peso");
+let inputA = document.querySelector("#input-altura");
 
-let inputidade = document.getElementsByTagName("input")[0]
-let inputpeso = document.getElementsByTagName("input")[1]
-let inputaltura = document.getElementsByTagName("input")[2]
+botaoH.addEventListener("click", ligado_1);
+botaoM.addEventListener("click", ligado_2);
+calcular.addEventListener("click", calculo);
+let on = null;
 
-function iniciar() {
-    let imagem1 = document.getElementsByTagName("img")[0]
-    imagem1.style.backgroundColor = "blue"
+function ligado_1() {
+  on = 1;
+
+  if (on == 1) {
+    botaoH.style.backgroundColor = "#d3d3d3";
+    botaoM.style.backgroundColor = "white";
+  }
+  console.log(on);
+}
+function ligado_2() {
+  on = 0;
+
+  if (on == 0) {
+    botaoM.style.backgroundColor = "#d3d3d3";
+
+    botaoH.style.backgroundColor = "white";
+  }
+  console.log(on);
 }
 
-function caucular() {
+let pai = document.querySelector(".son-2-2");
+let div = document.createElement("div");
+div.setAttribute("id", "div-nova");
 
-    let selected = document.getElementById("valor").value
-    let textarea = document.getElementsByTagName("textarea")[0]
-    let peso = inputpeso.value
-    let altura = inputaltura.value
-    let idade = inputidade.value
+function calculo() {
+  let valortotal;
 
-    let valortotal
-
-    if (inputidade.value == 0 && inputaltura.value == 0 && inputpeso.value == 0) {
-        alert("por favor, preencha os dados")
-        textarea.innerHTML = "preencha os dados"
+  if (on == null ) {
+    alert("por favor escolha uma opção");
+  }
+  else if (inputI.value == "" || inputP.value == "" || inputA.value == "") {
+    alert("por favor preencha os dados");
+  } else {
+    if (on == 1) {
+    valortotal = (66 + (13.8 * inputP.value) + (5.0 * inputA.value) - (6.8 * inputI.value));
+    console.log("pegando - 1", valortotal);
+    }
+    if (on == 0) {
+        valortotal = (665 + (9.6 * inputP.value) + (1.9 * inputA.value) - (4.7 * inputI.value));
+        console.log("pegando - 2", valortotal);
     }
 
-    else {
-        if (inputpeso.value == 0) {
-            alert("voce precisa preencher a peso")
-        }
-        if (inputidade.value == 0) {
-            alert("voce precisa preencher a idade")
-        }
-        if (inputaltura.value == 0) {
-            alert("voce precisa preencher a altura")
-        }
-        if (selected === "Homem") {
+    div.innerHTML = "";
+    div.innerHTML = `${valortotal} Kcal`
+    pai.appendChild(div);
+  }
 
-            valortotal = (66 + (13.8 * peso) + (5.0 * altura) - (6.8 * idade))
-        }
-        if (selected === "Mulher") {
-            valortotal = (655 + (9.6 * peso) + (1.9 * altura) - (4.7 * idade))
-        }
-
-        textarea.innerHTML = "você consumiu " + valortotal.toFixed(0) + " calorias"
-
-    }
-}
-function mudar() {
-    let selected = document.getElementById("valor").value
-    let imagem1 = document.getElementsByTagName("img")[0]
-    let imagem2 = document.getElementsByTagName("img")[1]
-
-    if (selected === "Homem") {
-        imagem1.style.backgroundColor = "blue"
-        imagem2.style.backgroundColor = "white"
-    }
-
-    if (selected === "Mulher") {
-        imagem2.style.backgroundColor = "#ff6781"
-        imagem1.style.backgroundColor = "white"
-    }
-
-
+    
 }
 
+//   div.innerHTML = "";
 
+//   pai.appendChild(div);
+
+//   console.log(div);
+
+// valortotal =(66 + (13.8 * inputP.value) + (5.0 * inputA.value) - (6.8 * inputI.value));
+//valortotal =  (665 + (9.6 * inputP.value) + (1.9 * inputA.value) - (4.7 * inputI.value));
+// else if (inputI.value == "" || inputP.value == "" || inputA.value == "") {
+//     console.log("por favor preencha os dados")
