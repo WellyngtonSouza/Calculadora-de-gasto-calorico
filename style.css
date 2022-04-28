@@ -7,7 +7,7 @@
 body {
     padding: 0;
     margin: 0;
-    height: 100vw;
+    height: 60vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,8 +19,8 @@ body {
 
 .caixa-principal {
 
-    height: 500px;
-    width: 500px;
+    height: 70%;
+    width: 35%;
     background-image: radial-gradient(circle at 50% -20.71%, #ff57d2 0, #ff4edb 12.5%, #f046e3 25%, #d63feb 37.5%, #b53cf2 50%, #8c3df9 62.5%, #4f40ff 75%, #0046ff 87.5%, #004bff 100%);
     border: 3px solid black;
     border-radius: 20px;
@@ -154,3 +154,5 @@ body {
     font-weight: bold;
     line-height: 50px;
 }
+
+
