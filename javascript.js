@@ -32,7 +32,7 @@ function ligado_2() {
 
 let pai = document.querySelector(".son-2-2");
 let div = document.createElement("div");
-div.setAttribute("id", "div-nova");
+div.setAttribute("id", "caixa-reposta");
 
 function calculo() {
   let valortotal;
