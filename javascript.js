@@ -17,7 +17,7 @@ function ligado_1() {
     botaoH.style.backgroundColor = "#d3d3d3";
     botaoM.style.backgroundColor = "white";
   }
-  console.log(on);
+ 
 }
 function ligado_2() {
   on = 0;
@@ -27,7 +27,7 @@ function ligado_2() {
 
     botaoH.style.backgroundColor = "white";
   }
-  console.log(on);
+ 
 }
 
 let pai = document.querySelector(".son-2-2");
@@ -60,13 +60,4 @@ function calculo() {
     
 }
 
-//   div.innerHTML = "";
 
-//   pai.appendChild(div);
-
-//   console.log(div);
-
-// valortotal =(66 + (13.8 * inputP.value) + (5.0 * inputA.value) - (6.8 * inputI.value));
-//valortotal =  (665 + (9.6 * inputP.value) + (1.9 * inputA.value) - (4.7 * inputI.value));
-// else if (inputI.value == "" || inputP.value == "" || inputA.value == "") {
-//     console.log("por favor preencha os dados")
